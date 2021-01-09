@@ -20,11 +20,12 @@ class Bridge(object):
             status_forcelist=status_forcelist,
         )
         adapter = HTTPAdapter(max_retries=retry)
-        self.session.mount('http://', adapter)
+        self.session.mount('http://', adapter)  # mounts custom adapter to schema
         self.session.mount('https://', adapter)
 
     def request(self, url, params={}, headers={}, timeout=15):
         try:
+            print(url+" ") # testing +params+" "+headers+" "+timeout
             return self.session.get(url,
                                     params=params,
                                     headers=headers,

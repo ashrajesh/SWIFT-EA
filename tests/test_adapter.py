@@ -1,3 +1,5 @@
+# to execute pytest: pipenv run pytest -rP
+
 import pytest
 import adapter
 

@@ -17,6 +17,7 @@ def call_adapter():
     if data == '':
         data = {}
     adapter = Adapter(data)
+    # print(jsonify(adapter.result))
     return jsonify(adapter.result)
 
 
