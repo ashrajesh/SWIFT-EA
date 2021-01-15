@@ -1,4 +1,4 @@
-name: SWIFT Transactions
+name: SWIFT Data
 description: Allows SWIFT financial messages to be accessed by blockchains and smart contracts for transaction verification use cases.
 
 node_identifier: SWIFT
@@ -6,9 +6,9 @@ platforms:
   - AWS Lambda
   - GCP Functions
 data_sources:
-  - name: SWIFT Sandbox API
+  - name: SWIFT-Sandbox-API
     url: https://sandbox.swift.com/swift-apitracker/v4/payments
 parameters:
   - UETR
-  - request type
-  - OAuth token
+  - request-type
+  - OAuth-token
