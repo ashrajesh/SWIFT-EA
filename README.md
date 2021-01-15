@@ -1,5 +1,6 @@
 # SWIFT-EA
 Chainlink external adapter that allows SWIFT financial messages to be accessed by the blockchain or smart contract for transaction verification use cases.
+Now available on Chainlink Marketplace! https://market.link/adapters/5489131f-fc3e-4523-a0a2-ae633f053b1d
 
 ## Install
 ```
