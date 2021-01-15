@@ -9,7 +9,7 @@ pipenv install
 ## Test
 ```
 pipenv run pytest
-
+```
 
 ## Run Serverless (via AWS Lambda or GCP Functions)
 ### Create zip file
@@ -21,19 +21,28 @@ pipenv run python -m zipfile -c cl-ea.zip main.py adapter.py bridge.py ./package
 ```
 
 # Solidity Example Integration:
-Declare UETR ID for desired Transaction
+### Declare UETR ID for desired Transaction
+'''
 req.add("UETR", "97ed4827-7b6f-4491-a06f-b548d5a7512d")
+'''
 
-GET status via HTTP request from options listed on: https://developer.swift.com/content/tracker-reference#tag/Get-Payment-Transaction-Details
+### GET status via HTTP request from options listed on: https://developer.swift.com/content/tracker-reference#tag/Get-Payment-Transaction-Details
+```
 req.add("status", "transactions") or "changed/transactions" or "cancellation" or "status"
+```
 
-Declare your OAuth Basic 2.0 from Sandbox
+### Declare your OAuth Basic 2.0 from Sandbox
+'''
 req.add("oauth", "YourSWIFT-APIOauthToken")
+'''
 
 # Sample Request Body
+'''
 {'id': 0, 'data': {'UETR': '97ed4827-7b6f-4491-a06f-b548d5a7512d', 'status': 'transactions', 'oauth_token': 'YourSWIFT-APIOauthToken'}}
+'''
 
 # Example JSON Response
+'''
 {
   "uetr": "97ed4827-7b6f-4491-a06f-b548d5a7512d",
   "transaction_status": "ACCC",
@@ -197,15 +206,14 @@ req.add("oauth", "YourSWIFT-APIOauthToken")
     }
   ]
 }
-
+'''
 
 
 # Testing & Development
 
-replace all test_data with your individual sandbox credentials from https://developer.swift.com/getting-started-g4c-sandbox-api (adjust input parameters to reflect new UETR and OAuth Token).
-replace base_url with 'https://api.swiftnet.sipn.swift.com/swift-apitracker/v4/payments' to exit sandbox mode and use real time data. Ensure to accomodate for SSL Certification when making requests along with other security / identification protocols.
+* replace all test_data with your individual sandbox credentials from https://developer.swift.com/getting-started-g4c-sandbox-api (adjust input parameters to reflect new UETR and OAuth Token).
+* replace base_url with 'https://api.swiftnet.sipn.swift.com/swift-apitracker/v4/payments' to exit sandbox mode and use real time data. Ensure to accomodate for SSL Certification when making requests along with other security / identification protocols.
 
 
 
-```
-Original Template Credit: https://github.com/thodges-gh/CL-EA-Python-Template
+### Original Template Credit: https://github.com/thodges-gh/CL-EA-Python-Template
