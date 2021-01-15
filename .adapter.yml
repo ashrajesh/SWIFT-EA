@@ -1,7 +1,7 @@
 name: SWIFT Financial Messaging
-description: Allows SWIFT financial messages to be accessed by blockchains/smart contracts for transaction verification use cases.
+description: Allows SWIFT financial messages to be accessed by blockchains and smart contracts for transaction verification use cases.
 
-node_identifier: SWIFT-EA
+node_identifier: SWIFT
 platforms:
   - AWS Lambda
   - GCP Functions
