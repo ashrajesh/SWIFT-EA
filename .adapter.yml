@@ -1,4 +1,4 @@
-name: SWIFT Financial Messaging
+name: SWIFT Transactions
 description: Allows SWIFT financial messages to be accessed by blockchains and smart contracts for transaction verification use cases.
 
 node_identifier: SWIFT
