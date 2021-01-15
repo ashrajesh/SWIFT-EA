@@ -1,0 +1,14 @@
+name: SWIFT Financial Messaging
+description: Allows SWIFT financial messages to be accessed by blockchains/smart contracts for transaction verification use cases.
+
+node_identifier: SWIFT-EA
+platforms:
+  - AWS Lambda
+  - GCP Functions
+data_sources:
+  - name: SWIFT Sandbox API
+    url: https://sandbox.swift.com/swift-apitracker/v4/payments
+parameters:
+  - UETR
+  - request type
+  - OAuth token
