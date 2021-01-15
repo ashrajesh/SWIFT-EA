@@ -8,6 +8,8 @@ platforms:
 data_sources:
   - name: SWIFT-Sandbox-API
     url: https://sandbox.swift.com/swift-apitracker/v4/payments
+  - name: SWIFT-API
+    url: https://api.swiftnet.sipn.swift.com/swift-apitracker/v4/payments
 parameters:
   - UETR
   - request-type

@@ -18,7 +18,7 @@ pipenv run pytest -rP
 ```bash
 pipenv lock -r > requirements.txt
 pipenv run pip install -r requirements.txt -t ./package
-pipenv run python -m zipfile -c cl-ea.zip main.py adapter.py bridge.py ./package/*
+pipenv run python -m zipfile -c swift-ea.zip main.py adapter.py bridge.py ./package/*
 ```
 
 # Solidity Example Integration:
