@@ -41,10 +41,8 @@ class Adapter:
 
     def create_request(self):
         try:
-            #
             headers = {"Authorization": "Basic "+self.oauth}
             self.base_url += "/"+self.from_param+"/"+self.to_param
-            #
             response = self.bridge.request(self.base_url, headers)
             data = response.json()
             self.result_json = data

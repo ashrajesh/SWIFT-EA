@@ -9,7 +9,7 @@ pipenv install
 
 ## Test
 ```
-pipenv run pytest
+pipenv run pytest -rP
 ```
 
 ## Run Serverless (via AWS Lambda or GCP Functions)
@@ -218,4 +218,4 @@ req.add("oauth", "YourSWIFT-APIOauthToken")
 
 
 
-### Original Template Credit: https://github.com/thodges-gh/CL-EA-Python-Template
+#### Template Credit: https://github.com/thodges-gh/CL-EA-Python-Template
