@@ -209,7 +209,7 @@ req.add("oauth", "YourSWIFT-APIOauthToken")
   ]
 }
 ```
-
+Above we observe MT103 payment & MT199 confirmation messages
 
 # Testing & Development
 
